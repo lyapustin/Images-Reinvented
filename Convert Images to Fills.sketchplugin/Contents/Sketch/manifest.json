@@ -12,14 +12,23 @@
       "handler" : "convertImagesToFills",
       "shortcut" : "shift cmd i",
       "identifier" : "convertImagesToFills",
-      "description" : "1",
+      "description" : "Convert selected image objects to rectangles with image fills",
+    },
+    {
+      "script" : "make-image.js",
+      "name" : "Convert Fills to Images",
+      "handler" : "convertFillsToImages",
+      "shortcut" : "shift cmd f",
+      "identifier" : "convertFillsToImages",
+      "description" : "Convert selected rectangles with image fills to image objects",
     }
 
   ],
   "menu" : {
     "title": "Convert Images to Fills",
     "items" : [
-      "convertImagesToFills"
+      "convertImagesToFills",
+      "convertFillsToImages"
     ]
   }
 }
