@@ -16,4 +16,4 @@ You can install this plugin via Sketch Runner or manually by following these ste
 
 ## Feedback
 
-This plugin is a edited version of plugin by <a href="https://github.com/roydigerhund">Matthias Martin</a>, all thanks to him.
+This plugin is an edited version of plugin by <a href="https://github.com/roydigerhund">Matthias Martin</a>, all thanks to him.
