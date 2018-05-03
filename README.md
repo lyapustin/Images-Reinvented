@@ -3,7 +3,7 @@
   <img src="http://bit.ly/RunnerBadgeBlue" height="41" width="auto">
 </a>
 
-You can install this plugin via Sketchpacks, Sketch Runner or manually by following these steps:
+You can install this plugin via Sketch Runner or manually by following these steps:
 
 1. Download and open "Images-to-Fills-master.zip"
 2. Locate and double-click "Convert Images to Fills.sketchplugin"
