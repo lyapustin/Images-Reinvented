@@ -1,48 +1,19 @@
-# Images Reinvented
-A plugin for Sketch to give you full control over your images with a single click. It creates a group which contains your image and a mask.
-
 ## Installation
-<a href="https://sketchpacks.com/roydigerhund/Images-Reinvented/install" title="Install Images Reinvented with Sketchpacks">
-  <img width="160" height="41" src="http://sketchpacks-com.s3.amazonaws.com/assets/badges/sketchpacks-badge-install.png" >
-</a>
 <a href="http://bit.ly/SketchRunnerWebsite">
   <img src="http://bit.ly/RunnerBadgeBlue" height="41" width="auto">
 </a>
 
 You can install this plugin via Sketchpacks, Sketch Runner or manually by following these steps:
 
-1. Download and open "Images-Reinvented-master.zip"
-2. Locate and double-click "Images Reinvented.sketchplugin"
-3. That’s it...
+1. Download and open "Images-to-Fills-master.zip"
+2. Locate and double-click "Convert Images to Fills.sketchplugin"
+3. Done.
 
 ## How it works
-It's really simple!
+- Select at least one image;
+- run plugin.
 
-### Create the image group
-- Drag & Drop your image in Sketch
-- Click **Create Image Group** or hit **Shift + Cmd + I**
-
-![Create Image Group GIF](/Docs/create-image-group.gif)
-
-### Crop, Resize and Reposition
-- change the size of your image and mask by resizing the whole group
-- edit the mask to crop your image
-- resize and position the image to define the visible section
-
-### Additional Functions
-#### Fill Image
-Resize the image, so it will fill the mask.
-
-#### Fit Image
-Resize the image, so it will fit in the mask.
-
-#### Resize Mask
-Resize the mask to the width and height of the image.
-
-### Infos
-- With image groupes you can easily overwrite the images in symbols without distorting them because they are fills and will stay proportional.
-- By applying one of the functions (Fill Image, Fit Image and Resize Mask) the image layer will check the proportions of the image and resize the image layer if nessecary.
 
 ## Feedback
 
-If you have any problems or ideas, please open an issue or send it to github@matzemachtdesign.de
+This plugin is a edited version of plugin by <a href="https://github.com/roydigerhund">Matthias Martin</a>, all thanks to him.
