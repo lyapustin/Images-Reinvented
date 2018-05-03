@@ -1,0 +1,25 @@
+{
+  "name" : "Convert Images to Fills",
+  "identifier" : "com.example.sketch.convert-images-to-fills",
+  "version" : "1.0",
+  "description" : "Based on script by Matthias Martin",
+  "authorEmail" : "",
+  "author" : "Dmitry Lyapustin",
+  "commands" : [
+    {
+      "script" : "make-image.js",
+      "name" : "Convert Images to Fills",
+      "handler" : "convertImagesToFills",
+      "shortcut" : "shift cmd i",
+      "identifier" : "convertImagesToFills",
+      "description" : "1",
+    }
+
+  ],
+  "menu" : {
+    "title": "Convert Images to Fills",
+    "items" : [
+      "convertImagesToFills"
+    ]
+  }
+}
