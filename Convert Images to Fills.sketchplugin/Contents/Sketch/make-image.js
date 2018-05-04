@@ -11,22 +11,28 @@ function convertFillsToImages(context) {
       var artboard = layer.parentArtboard()
       var placeInto = (artboard) ? artboard : page
 
-      var image = layer.style().fills().firstObject().image();
-      var layerName = layer.name();
-      var layerFrame = layer.frame();
-      var layerImage = MSBitmapLayer.alloc().initWithFrame_image(
-        NSMakeRect(layerFrame.x(), layerFrame.y(), layer.rect().size.width, layer.rect().size.height),
-        image)
+      if (layer.className() != "MSShapeGroup") {
+        document.showMessage('Please select only objects with fills! ' + layer.name() + ' is ' + layer.className());
+      } else {
+        var image = layer.style().fills().firstObject().image();
+        var layerName = layer.name();
+        var layerFrame = layer.frame();
+        var layerSize = layer.rect().size;
+        var layerImage = MSBitmapLayer.alloc().initWithFrame_image(
+          NSMakeRect(layerFrame.x(), layerFrame.y(), layerSize.width, layerSize.height),
+          image)
 
-      layerImage.frame().setWidth(layer.rect().size.width);
-      layerImage.frame().setHeight(layer.rect().size.height);
-      var addTo = (artboard) ? artboard : page;
-      addTo.addLayers([layerImage]);
-      layerImage.setName(layerName);
-      layerImage.setConstrainProportions(0);
-      layerImage.frame().size = layerImage.NSImage().size();
-      layer.removeFromParent()
+        layerImage.frame().setWidth(layerSize.width);
+        layerImage.frame().setHeight(layerSize.height);
+        placeInto.addLayers([layerImage]);
+        layerImage.setName(layerName);
+        layerImage.setConstrainProportions(0);
+        layerImage.frame().size = layerImage.NSImage().size();
+        layer.removeFromParent()
+      }
     }
+  } else {
+    document.showMessage('Nothing is selected!')
   }
 };
 
@@ -76,6 +82,4 @@ function convertImagesToFills(context) {
   } else {
     document.showMessage('Nothing is selected!')
   }
-
-
 };
